@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Affiliate & Advertise Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Promotions & Partnerships</h1>
+    <p>Explore deals, upload your products, or advertise with me!</p>
+  </header>
+
+  <section class="affiliate-section">
+    <h2>Amazon Deal of the Day</h2>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/200x200" alt="Amazon Product">
+      <h3>Sample Product Name</h3>
+      <p>This is where your product description will go.</p>
+      <a href="https://www.amazon.com/dp/your-affiliate-id" class="btn" target="_blank">Buy Now</a>
+    </div>
+  </section>
+
+  <section class="upload-section">
+    <h2>Upload Your Product</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST" enctype="multipart/form-data">
+      <label for="name">Your Name</label>
+      <input type="text" name="name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" name="email" required>
+
+      <label for="productName">Product Name</label>
+      <input type="text" name="productName" required>
+
+      <label for="description">Description</label>
+      <textarea name="description" required></textarea>
+
+      <label for="price">Price ($ or ₦)</label>
+      <input type="text" name="price" required>
+
+      <label for="image">Upload Image</label>
+      <input type="file" name="image">
+
+      <button type="submit" class="btn">Submit Product</button>
+    </form>
+  </section>
+
+  <section class="advertise-section">
+    <h2>Advertise With Me</h2>
+    <p>I accept collaborations and sponsored posts. Contact me through:</p>
+    <ul class="contact-list">
+      <li><strong>Email:</strong> your@email.com</li>
+      <li><strong>WhatsApp:</strong> +234 000 0000 000</li>
+      <li><strong>Instagram:</strong> <a href="https://instagram.com/yourhandle">@yourhandle</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2025 YourName. All rights reserved.</p>
+  </footer>
+</body>
+</html>
