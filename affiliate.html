@@ -1,64 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Affiliate & Advertise Page</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Affiliate & Ad Space</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ece9e6, #ffffff);
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      color: #000;
+      margin-top: 1.5rem;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #FF9900;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    input, textarea {
+      padding: 0.8rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      padding: 0.8rem;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #f0f0f0;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Promotions & Partnerships</h1>
-    <p>Explore deals, upload your products, or advertise with me!</p>
+    <h1>Affiliate Deals & Ad Upload</h1>
   </header>
 
-  <section class="affiliate-section">
-    <h2>Amazon Deal of the Day</h2>
-    <div class="product-card">
-      <img src="https://via.placeholder.com/200x200" alt="Amazon Product">
-      <h3>Sample Product Name</h3>
-      <p>This is where your product description will go.</p>
-      <a href="https://www.amazon.com/dp/your-affiliate-id" class="btn" target="_blank">Buy Now</a>
-    </div>
+  <section>
+    <h2>Shop with Me on Amazon</h2>
+    <p>Support my work by shopping through my affiliate link:</p>
+    <a href="#" class="button" target="_blank">Visit My Amazon Store</a>
   </section>
 
-  <section class="upload-section">
-    <h2>Upload Your Product</h2>
-    <form action="https://formspree.io/f/your-form-id" method="POST" enctype="multipart/form-data">
-      <label for="name">Your Name</label>
-      <input type="text" name="name" required>
-
-      <label for="email">Your Email</label>
-      <input type="email" name="email" required>
-
-      <label for="productName">Product Name</label>
-      <input type="text" name="productName" required>
-
-      <label for="description">Description</label>
-      <textarea name="description" required></textarea>
-
-      <label for="price">Price ($ or ₦)</label>
-      <input type="text" name="price" required>
-
-      <label for="image">Upload Image</label>
-      <input type="file" name="image">
-
-      <button type="submit" class="btn">Submit Product</button>
+  <section>
+    <h2>Upload Your Product for Promotion</h2>
+    <p>Want to feature your product here? Fill the form below:</p>
+    <form action="https://formsubmit.co/youremail@example.com" method="POST" enctype="multipart/form-data">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="text" name="product" placeholder="Product Name" required />
+      <textarea name="description" placeholder="Product Description" rows="4" required></textarea>
+      <input type="file" name="file" accept="image/*" required />
+      <button type="submit">Upload Product</button>
     </form>
   </section>
 
-  <section class="advertise-section">
-    <h2>Advertise With Me</h2>
-    <p>I accept collaborations and sponsored posts. Contact me through:</p>
-    <ul class="contact-list">
-      <li><strong>Email:</strong> your@email.com</li>
-      <li><strong>WhatsApp:</strong> +234 000 0000 000</li>
-      <li><strong>Instagram:</strong> <a href="https://instagram.com/yourhandle">@yourhandle</a></li>
+  <section>
+    <h2>Contact Me for Ad Space</h2>
+    <p>I offer premium space to promote your product or brand. Contact me:</p>
+    <ul>
+      <li>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></li>
+      <li>Instagram: <a href="https://instagram.com/yourprofile" target="_blank">@yourprofile</a></li>
+      <li>Pinterest: <a href="https://pin.it/48oZT8gf3" target="_blank">Follow me</a></li>
+      <li>WhatsApp: <a href="https://wa.me/234XXXXXXXXXX" target="_blank">Chat with me</a></li>
     </ul>
   </section>
 
   <footer>
-    <p>© 2025 YourName. All rights reserved.</p>
+    &copy; 2025 Official Royalty | All rights reserved.
   </footer>
 </body>
 </html>
